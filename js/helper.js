@@ -29,9 +29,9 @@ var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></
 
 var HTMLmyEntry = '<div class="my-entry"></div>';
 var HTMLmyTagline = '<h5><i>%data%</i></h5>';
-var HTMLwhoAmI = '<h4 id="whoami">Who am I:</h4>'
+var HTMLwhoAmI = '<h4 id="whoami">Who am I:</h4>';
 var HTMLaboutMe = '<p>%data%</p>';
-var HTMLwhatDoIDo = '<h4 id="whatdoido">What I am Up to:</h4>'
+var HTMLwhatDoIDo = '<h4 id="whatdoido">What I am Up to:</h4>';
 var HTMLmyDesc = '<p>%data%</p>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
@@ -62,8 +62,6 @@ var HTMLonlineURL = '<br><a href="https://www.udacity.com/" target = "_blank">%d
 
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
-
-//d3.selectAll("h3").style("color", "purple");
 
 /*
 The International Name challenge in Lesson 2 where you'll create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.
@@ -167,16 +165,6 @@ function initializeMap() {
             position: placeData.geometry.location,
             title: name
         });
-
-        var name = '<div id="content">' +
-            '<div id="siteNotice">' +
-            '</div>' +
-            '<h1 id="firstHeading" class="firstHeading">Mumbai</h1>' +
-            '<div id="bodyContent">' +
-            '<p>Attribution: Mumbai, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-            'https://en.wikipedia.org/wiki/Mumbai</a> ' +
-            '</div>' +
-            '</div>';
 
         // infoWindows are the little helper windows that open when you click
         // or hover over a pin on a map. They usually contain more information
