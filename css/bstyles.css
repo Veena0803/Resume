@@ -1,0 +1,47 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: #a02422;
+    font-weight: 900;
+    background-color: #ffe8e5;
+}
+
+.text-muted {
+    color: #9d1309;
+}
+
+.text-thin {
+    font-weight: 900;
+}
+
+.text-thick {
+    font-weight: bold;
+}
+
+.title-super {
+    font-size: 60px;
+}
+
+.title-logo {
+    margin-top: 20px;
+}
+
+.size {
+    width: 500px;
+    height: 475px;
+}
+
+.hr {
+    height: 1px;
+    border: none;
+    color: #333;
+    background-color: #333;
+}
+
+.small-size {
+    width: 250px;
+    height: 238px;
+}
+
+.cursor-style {
+    cursor: pointer;
+}
