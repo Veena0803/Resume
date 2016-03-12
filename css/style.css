@@ -105,9 +105,6 @@ a {
 }
 /* TODO: Replace with image later */
 
-#header {
-    background-color: #484848;
-}
 .flex-box {
     display: -webkit-flex;
     display: flex;
@@ -211,6 +208,38 @@ span {
     padding-right: 15px;
     font-weight: bold;
 }
+
+/*Grid Layout*/
+.wrapper{
+   margin: 0px auto;
+   width: undefinedpx;
+   background-color: #cccccc
+}
+.header{
+   float: left;
+   width: 100%;
+   height: 350px;
+   background-color: #663333;
+}
+.content{
+   float: left;
+   width: 100%;
+   min-height: 500px;
+   background-color: #ffcc99
+}
+.footer{
+   float: left;
+   width: 100%;
+   height: 50px;
+   background-color: #000000
+}
+body {
+   padding: 0px;
+   margin: 0px;
+   font-size: 90%;
+   background-color: #e7e7de
+}
+
 @media only screen and (min-width: 750px) {
     #skillsH3,
     .biopic {

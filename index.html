@@ -67,74 +67,69 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     resume below. You can pretty easily figure out what each section will
     display by looking at the id or at what's written between the <h2> tags.
     -->
-        <a name="topOfPage"></a>
-        <section>
-            <div id="header" class="center-content clearfix">
+        <div class="wrapper">
+            <a name="topOfPage"></a>
+            <div class="header">
                 <ul id="topContacts" class='flex-box'></ul>
             </div>
+            <div class="content">
 
-            <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                    <!-- <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div> -->
-                    <ul class="nav navbar-nav">
-                        <!-- <li class="active"><a href="#aboutme">About Me</a><</li> -->
-                        <li><a href="#workex">Work Exp</a>
-                        </li>
-                        <li><a href="#projects">Projects</a>
-                        </li>
-                        <li><a href="#edu">Education</a>
-                        </li>
-                        <li><a href="#loc">Location</a>
-                        </li>
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#workex">Work Exp</a>
+                            </li>
+                            <li><a href="#projects">Projects</a>
+                            </li>
+                            <li><a href="#edu">Education</a>
+                            </li>
+                            <li><a href="#loc">Location</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div id="aboutme" class='pink'>
+                    <h2>About Me</h2>
+                    <div id="pieChart" class="pie"></div>
+                </div>
+
+                <div id="workExperience" class='gray'>
+                    <a name="workex"></a>
+                    <h2>Work Experience</h2>
+                </div>
+                <div id="projects" class='pink'>
+                    <a name="projects"></a>
+                    <h2>Projects</h2>
+                </div>
+                <div id="education" class='gray'>
+                    <a name="edu"></a>
+                    <h2>Education</h2>
+                </div>
+                <div id="mapDiv" class='pink'>
+                    <a name="loc"></a>
+                    <h2>Where I've Lived and Worked</h2>
+                </div>
+            </div>
+            <div class="footer">
+                <div id="letsConnect" class='dark-gray'>
+                    <h2 class='orange center-text'>Let's Connect</h2>
+                    <ul id="footerContacts" class="flex-box">
                     </ul>
                 </div>
-            </nav>
-
-
-            <div style='clear: both;'></div>
-        </section>
-        <div id="aboutme" class='pink'>
-            <h2>About Me</h2>
-            <div id="pieChart" class="pie"></div>
+            </div>
         </div>
-
-        <div id="workExperience" class='gray'>
-            <a name="workex"></a>
-            <h2>Work Experience</h2>
+        <div id="top" class="top">
+            <a href="#topOfPage" class="scrolltop">Scroll to top</a>
         </div>
-        <div id="projects" class='pink'>
-            <a name="projects"></a>
-            <h2>Projects</h2>
-        </div>
-        <div id="education" class='gray'>
-            <a name="edu"></a>
-            <h2>Education</h2>
-        </div>
-        <div id="mapDiv" class='pink'>
-            <a name="loc"></a>
-            <h2>Where I've Lived and Worked</h2>
-        </div>
-        <div id="letsConnect" class='dark-gray'>
-            <h2 class='orange center-text'>Let's Connect</h2>
-            <ul id="footerContacts" class="flex-box">
-            </ul>
-        </div>
-    </div>
-
-    <div id="top" class="top">
-        <a href="#topOfPage" class="scrolltop">Scroll to top</a>
-    </div>
-    <!--
+        <!--
   The next line tells the browser where to download the JavaScript file you'll be
   writing. In resumeBuilder.js, you'll be writing code that builds the resume
   dynamically when this website, index.html, is opened.
   -->
-    <script src="js/resumeBuilder.js"></script>
+        <script src="js/resumeBuilder.js"></script>
 
 
-    <!--
+        <!--
   These scripts are written in JavaScript. You'll be breaking them down as part of
   a quiz. Essentially, the next few lines are checking to see if you have not
   changed each section of the resume. If you have not made any changes to a section
@@ -142,46 +137,46 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   course.
   -->
 
-    <script type="text/javascript">
-        // Notice how all of a sudden there's JavaScript inside this HTML
-        // document? You can write JavaScript between <script> tags. At the end of your
-        // JavaScript, don't forget the closing script tag with the slash (/).
+        <script type="text/javascript">
+            // Notice how all of a sudden there's JavaScript inside this HTML
+            // document? You can write JavaScript between <script> tags. At the end of your
+            // JavaScript, don't forget the closing script tag with the slash (/).
 
 
-        // Also, this is a JavaScript style comment. You can comment in JavaScript with:
+            // Also, this is a JavaScript style comment. You can comment in JavaScript with:
 
-        //   two slashes for all following characters on a single line, or
+            //   two slashes for all following characters on a single line, or
 
-        /*
-            an opening and closing set of slash asterisks for block comments.
-        */
+            /*
+                an opening and closing set of slash asterisks for block comments.
+            */
 
 
-        if (document.getElementsByClassName('flex-item').length === 0) {
-            document.getElementById('topContacts').style.display = 'none';
-        }
-        if (document.getElementsByTagName('h1').length === 0) {
-            document.getElementById('header').style.display = 'none';
-        }
-        if (document.getElementsByClassName('my-entry').length === 0) {
-            document.getElementById('aboutme').style.backgroundColor = 'none';
-        }
-        if (document.getElementsByClassName('work-entry').length === 0) {
-            document.getElementById('workExperience').style.display = 'none';
-        }
-        if (document.getElementsByClassName('project-entry').length === 0) {
-            document.getElementById('projects').style.display = 'none';
-        }
-        if (document.getElementsByClassName('education-entry').length === 0) {
-            document.getElementById('education').style.backgroundColor = 'none';
-        }
-        if (document.getElementsByClassName('flex-item').length === 0) {
-            document.getElementById('letsConnect').style.display = 'none';
-        }
-        if (document.getElementById('map') === null) {
-            document.getElementById('mapDiv').style.display = 'none';
-        }
-    </script>
+            if (document.getElementsByClassName('flex-item').length === 0) {
+                document.getElementById('topContacts').style.display = 'none';
+            }
+            if (document.getElementsByTagName('h1').length === 0) {
+                document.getElementById('header').style.display = 'none';
+            }
+            if (document.getElementsByClassName('my-entry').length === 0) {
+                document.getElementById('aboutme').style.backgroundColor = 'none';
+            }
+            if (document.getElementsByClassName('work-entry').length === 0) {
+                document.getElementById('workExperience').style.display = 'none';
+            }
+            if (document.getElementsByClassName('project-entry').length === 0) {
+                document.getElementById('projects').style.display = 'none';
+            }
+            if (document.getElementsByClassName('education-entry').length === 0) {
+                document.getElementById('education').style.backgroundColor = 'none';
+            }
+            if (document.getElementsByClassName('flex-item').length === 0) {
+                document.getElementById('letsConnect').style.display = 'none';
+            }
+            if (document.getElementById('map') === null) {
+                document.getElementById('mapDiv').style.display = 'none';
+            }
+        </script>
 </body>
 
 </html>
